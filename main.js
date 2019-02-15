@@ -69,12 +69,12 @@ function UpdateScreenState() {
 
     // If there is a winner show it.
     if (gameState.Winner === "") {
-        document.getElementById('Winner').innerText = `It is ${gameState.Next}'s turn`;
+        document.getElementById('Winner').innerText = `${gameState.Next} to move`;
     } else {
         if (gameState.Winner == "Tie") {
-            document.getElementById('Winner').innerText = `The game is a Tie`;
+            document.getElementById('Winner').innerText = `Tied Game`;
         } else {
-            document.getElementById('Winner').innerText = `The winner is ${gameState.Winner}`;
+            document.getElementById('Winner').innerText = `Winner: ${gameState.Winner}`;
         }
     }
 
